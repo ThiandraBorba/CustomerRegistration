@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="register.css" media="screen">
+    <title>Customer Registration</title>
+</head>
+<body>
+    
+    <div class="campo">
+        <h1 id="titulo">Customer Registration</h1>
+        <br>
+        <br>
+        <p id="subtitulo"><strong>Enter your details below</strong></p>
+        <br>
+        
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Name</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Last Name</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+        
+        
+        <div class="campo">
+                <label><strong>E-mail</strong></label>
+                <input type="email" name="email" id="email" required>
+       </div>
+
+       <div class="campo">
+        <label><strong>Address</strong></label>
+        <input type="endereco" name="endereco" id="endereco">
+    </div>
+
+       <div class="campo">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+        
+        <label><strong>Telephone</strong></label>
+        <input type="telefone" name="telefone" id="telefone" maxlength="15" >
+        <script type="text/javascript">
+            $("#telefone").mask("(00) 00000-0000");
+            </script>
+    </div>
+
+       <div class="campo">
+                     
+        <label><strong>State</strong></label>
+        <select id="estado">
+            <option selected disabled value="">Select your State</option>
+            <option>Rio de Janeiro</option>
+            <option>São Paulo</option>
+            <option>Minas Gerais</option>
+            <option>Espirito Santo</option>
+            <option>Santa Catarina</option>
+            <option>Rio Grande do Sul</option>
+            <option>Paraná</option>
+            <option>Bahia</option>
+            <option>Rio Grande do Norte</option>
+            <option>Ceará</option>
+            <option>Acre</option>
+            <optio>Recife</optio>
+            <option>Amazonas</option>
+            <option>Tocantins</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Distrito Federal</option>
+            <option>Goiás</option>
+            <option>Maranhão</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Pará</option>
+            <option>Paraíba</option>
+            <option>Pernambuco</option>
+            <option>Piauí</option>
+            <option>Rondônia</option>
+            <option>Roraima</option>
+            <option>Sergipe</option>
+
+        </select>
+    </div>
+
+    </fieldset>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>How did you find us?</strong></label><br>
+                <br>
+                <input type="checkbox" id="rede1" name="rede1" value="Instagram">
+                <label for="rede1"> Instagram</label><br>
+                <input type="checkbox" id="rede2" name="rede2" value="Twitter">
+                <label for="rede2"> Twitter</label><br>
+                <input type="checkbox" id="rede3" name="rede3" value="Linkedin">
+                <label for="rede3"> Linkedin</label><br>
+                <input type="checkbox" id="rede4" name="rede4" value="Facebook">
+                <label for="rede4"> Facebook</label><br>
+                <input type="checkbox" id="rede5" name="rede5" value="Indicação">
+                <label for="rede5"> Recommendation</label><br>
+                <input type="checkbox" id="rede6" name="rede6" value="Anuncios">
+                <label for="rede6"> Adverts</label><br>
+                <input type="checkbox" id="rede7" name="rede7" value="Outros">
+                <label for="rede7"> Others</label><br>
+                <div class="campo">
+                    <br>
+                <input type="text" name="outros" id="outros">
+                </div>
+            </div>  
+            <div class="lado">
+                <label for="sexo"><strong>Gender</strong></label><br>
+                <label>
+                    <input type="radio" name="sexo" value="masculino"> Male
+                </label>
+                <br>
+                <label>
+                 <input type="radio" name="sexo" value="feminino"> Female
+             </label>
+                 </div>     
+        </fieldset>
+
+        <button class="botao" type="submit">Save</button>
+    </form>
+
+</body>
+</html>
